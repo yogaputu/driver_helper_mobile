@@ -1,0 +1,7 @@
+#Wed Aug 19 12:17:49 WIB 2026
+base.0=/Users/macairm2/www/driver_helper_mobile/app/build/intermediates/dex/debugAndroidTest/mergeProjectDexDebugAndroidTest/0/classes.dex
+base.1=/Users/macairm2/www/driver_helper_mobile/app/build/intermediates/dex/debugAndroidTest/mergeProjectDexDebugAndroidTest/2/classes.dex
+path.0=0/classes.dex
+path.1=2/classes.dex
+renamed.0=classes.dex
+renamed.1=classes2.dex

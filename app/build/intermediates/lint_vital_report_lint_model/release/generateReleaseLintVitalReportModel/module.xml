@@ -1,0 +1,19 @@
+<lint-module
+    format="1"
+    dir="/Users/macairm2/www/driver_helper_mobile/app"
+    name=":app"
+    type="APP"
+    maven="BudimasDriverHelper:app:unspecified"
+    agpVersion="8.7.2"
+    buildFolder="build"
+    bootClassPath="/Users/macairm2/Library/Android/sdk/platforms/android-35/android.jar:/Users/macairm2/Library/Android/sdk/build-tools/34.0.0/core-lambda-stubs.jar"
+    javaSourceLevel="17"
+    compileTarget="android-35"
+    neverShrinking="true">
+  <lintOptions
+      abortOnError="true"
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true"/>
+  <variant name="release"/>
+</lint-module>

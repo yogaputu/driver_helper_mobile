@@ -1,0 +1,76 @@
+plugins {
+    id "com.android.application"
+}
+
+def debugApiBaseUrl = project.findProperty("BUDIMAS_DEBUG_API_BASE_URL") ?: "https://erp.budimas.swakarya.my.id/api/"
+def productionApiBaseUrl = project.findProperty("BUDIMAS_PROD_API_BASE_URL") ?: "https://erp.budimas.swakarya.my.id/api/"
+def releaseStoreFilePath = project.findProperty("BUDIMAS_RELEASE_STORE_FILE")
+def releaseStorePassword = project.findProperty("BUDIMAS_RELEASE_STORE_PASSWORD")
+def releaseKeyAlias = project.findProperty("BUDIMAS_RELEASE_KEY_ALIAS")
+def releaseKeyPassword = project.findProperty("BUDIMAS_RELEASE_KEY_PASSWORD")
+def hasReleaseSigning = releaseStoreFilePath && releaseStorePassword && releaseKeyAlias && releaseKeyPassword
+
+android {
+    namespace "com.budimas.driverhelper"
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "com.budimas.driverhelper"
+        minSdk 23
+        targetSdk 35
+        versionCode 9
+        versionName "0.4.5"
+    }
+
+    buildFeatures {
+        buildConfig true
+    }
+
+    signingConfigs {
+        release {
+            // Signing material is deliberately supplied outside source control.
+            // See gradle.properties.example before creating a production APK.
+            if (hasReleaseSigning) {
+                storeFile file(releaseStoreFilePath)
+                storePassword releaseStorePassword
+                keyAlias releaseKeyAlias
+                keyPassword releaseKeyPassword
+            }
+        }
+    }
+
+    buildTypes {
+        debug {
+            buildConfigField "String", "API_BASE_URL", "\"${debugApiBaseUrl}\""
+            buildConfigField "boolean", "ALLOW_CLEARTEXT", "false"
+            manifestPlaceholders.allowCleartextTraffic = "false"
+        }
+        release {
+            buildConfigField "String", "API_BASE_URL", "\"${productionApiBaseUrl}\""
+            buildConfigField "boolean", "ALLOW_CLEARTEXT", "false"
+            manifestPlaceholders.allowCleartextTraffic = "false"
+            minifyEnabled false
+            shrinkResources false
+            if (hasReleaseSigning) {
+                signingConfig signingConfigs.release
+            }
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+dependencies {
+    implementation "androidx.core:core:1.13.1"
+    implementation "androidx.activity:activity:1.9.3"
+    // Keeps the Activity Result APIs used by QR and proof-photo capture
+    // compatible with release lint and current AndroidX lifecycle behavior.
+    implementation "androidx.fragment:fragment:1.7.1"
+    implementation "com.google.android.gms:play-services-location:21.3.0"
+    implementation "com.journeyapps:zxing-android-embedded:4.3.0"
+    implementation "androidx.security:security-crypto:1.0.0"
+    implementation "androidx.work:work-runtime:2.9.1"
+}

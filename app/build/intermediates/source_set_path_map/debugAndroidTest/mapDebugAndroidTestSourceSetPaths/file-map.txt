@@ -1,0 +1,4 @@
+com.budimas.driverhelper.test.app-androidTest-0 /Users/macairm2/www/driver_helper_mobile/app/build/generated/res/resValues/androidTest/debug
+com.budimas.driverhelper.test.app-mergeDebugAndroidTestResources-1 /Users/macairm2/www/driver_helper_mobile/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+com.budimas.driverhelper.test.app-mergeDebugAndroidTestResources-2 /Users/macairm2/www/driver_helper_mobile/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+com.budimas.driverhelper.test.app-debugAndroidTest-3 /Users/macairm2/www/driver_helper_mobile/app/build/intermediates/merged_res/debugAndroidTest/mergeDebugAndroidTestResources

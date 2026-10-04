@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="app_background">#08111F</color>
+    <color name="blue">#4A78FF</color>
+    <color name="blue_deep">#3155CD</color>
+    <color name="border">#2A4061</color>
+    <color name="cyan">#3FD6D0</color>
+    <color name="green">#2BCB8B</color>
+    <color name="orange">#F4B44C</color>
+    <color name="red">#F06B85</color>
+    <color name="surface">#101D31</color>
+    <color name="surface_input">#0C1728</color>
+    <color name="surface_light">#182943</color>
+    <color name="text_muted">#71839F</color>
+    <color name="text_primary">#F7F9FF</color>
+    <color name="text_secondary">#AABAD2</color>
+    <string name="app_name">Budimas Driver</string>
+    <string name="tracking_channel_description">Lokasi perjalanan aktif dikirim sekitar setiap 15 menit untuk operasional Budimas.</string>
+    <string name="tracking_channel_name">Pelacakan Perjalanan</string>
+    <style name="AppTheme" parent="android:style/Theme.Material.NoActionBar">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:statusBarColor">@color/app_background</item>
+        <item name="android:navigationBarColor">@color/app_background</item>
+        <item name="android:colorAccent">@color/blue</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+</resources>

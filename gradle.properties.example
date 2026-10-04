@@ -1,0 +1,7 @@
+# Do not commit this file after replacing the placeholders. Keep real values in
+# ~/.gradle/gradle.properties or a CI secret store.
+# BUDIMAS_PROD_API_BASE_URL=https://erp.example.id/api/
+# BUDIMAS_RELEASE_STORE_FILE=/absolute/path/to/budimas-release.jks
+# BUDIMAS_RELEASE_STORE_PASSWORD=change-me
+# BUDIMAS_RELEASE_KEY_ALIAS=budimas-driver
+# BUDIMAS_RELEASE_KEY_PASSWORD=change-me

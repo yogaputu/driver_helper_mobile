@@ -1,0 +1,17 @@
+<resources>
+    <!-- Deep navy canvas with restrained cobalt accents: tuned for long operational use. -->
+    <color name="app_background">#08111F</color>
+    <color name="surface">#101D31</color>
+    <color name="surface_light">#182943</color>
+    <color name="surface_input">#0C1728</color>
+    <color name="border">#2A4061</color>
+    <color name="text_primary">#F7F9FF</color>
+    <color name="text_secondary">#AABAD2</color>
+    <color name="text_muted">#71839F</color>
+    <color name="blue">#4A78FF</color>
+    <color name="blue_deep">#3155CD</color>
+    <color name="cyan">#3FD6D0</color>
+    <color name="green">#2BCB8B</color>
+    <color name="orange">#F4B44C</color>
+    <color name="red">#F06B85</color>
+</resources>

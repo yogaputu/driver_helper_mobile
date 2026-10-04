@@ -1,0 +1,7 @@
+#Fri Aug 14 16:48:32 WIB 2026
+base.0=/Users/macairm2/www/driver_helper_mobile/app/build/intermediates/dex/release/mergeDexRelease/classes.dex
+base.1=/Users/macairm2/www/driver_helper_mobile/app/build/intermediates/global_synthetics_dex/release/mergeReleaseGlobalSynthetics/classes.dex
+path.0=classes.dex
+path.1=classes.dex
+renamed.0=classes.dex
+renamed.1=classes2.dex

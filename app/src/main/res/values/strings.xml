@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Budimas Driver</string>
+    <string name="tracking_channel_name">Pelacakan Perjalanan</string>
+    <string name="tracking_channel_description">Lokasi perjalanan aktif dikirim sekitar setiap 15 menit untuk operasional Budimas.</string>
+</resources>

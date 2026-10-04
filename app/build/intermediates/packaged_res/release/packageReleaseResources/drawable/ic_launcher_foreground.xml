@@ -1,0 +1,17 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:width="82dp"
+        android:height="60dp"
+        android:gravity="center">
+        <bitmap
+            android:gravity="fill"
+            android:src="@drawable/budimas_mark" />
+    </item>
+    <item
+        android:width="30dp"
+        android:height="30dp"
+        android:gravity="bottom|end"
+        android:bottom="12dp"
+        android:right="12dp"
+        android:drawable="@drawable/ic_launcher_badge" />
+</layer-list>

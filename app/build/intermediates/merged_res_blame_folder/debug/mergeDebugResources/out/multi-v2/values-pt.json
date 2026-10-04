@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.budimas.driverhelper.app-mergeDebugResources-25:/values-pt/values-pt.xml",
+            "map": [
+                {
+                    "source": "/Users/macairm2/.gradle/caches/8.11.1/transforms/30e9df696dfe8a4f38853a633bacb3fd/transformed/core-1.13.1/res/values-pt/values-pt.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,152,254,353,453,560,670,790",
+                        "endColumns": "96,101,98,99,106,109,119,100",
+                        "endOffsets": "147,249,348,448,555,665,785,886"
+                    }
+                },
+                {
+                    "source": "/Users/macairm2/.gradle/caches/8.11.1/transforms/885d3efde66c5359f2af9c9b4b5ae189/transformed/zxing-android-embedded-4.3.0/res/values-pt/values-pt.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,114,161,317",
+                        "endColumns": "58,46,155,106",
+                        "endOffsets": "109,156,312,419"
+                    },
+                    "to": {
+                        "startLines": "10,11,12,13",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "891,950,997,1153",
+                        "endColumns": "58,46,155,106",
+                        "endOffsets": "945,992,1148,1255"
+                    }
+                }
+            ]
+        }
+    ]
+}
