@@ -698,6 +698,7 @@ public class MainActivity extends ComponentActivity {
         String pallet = firstValue(item, "", "no_pallet", "pallet_code", "kode_pallet");
 
         card.addView(title(heading, 18));
+        if (item.has("stok_ready")) card.addView(body("Stok Ready Gudang: " + firstValue(item, "0", "stok_ready") + " PCS", 13), withTop(4));
         if (!uomQuantity.isEmpty()) card.addView(body("Rencana UOM: " + uomQuantity, 15), withTop(6));
         if (!Double.isNaN(plannedPcs)) card.addView(body("Rencana: " + formatQuantity(plannedPcs) + " PCS", 15), withTop(4));
         if (!batch.isEmpty() || !pallet.isEmpty()) {
@@ -1247,6 +1248,7 @@ public class MainActivity extends ComponentActivity {
         double uomLevel = optionalNumberValue(item, "uom_level", "level_uom", "conversion_level");
         double plannedUomValue = optionalNumberValue(item, "planned_qty_uom", "qty_uom_value", "quantity_uom");
         card.addView(title(code.isEmpty() ? name : code + " · " + name, 18));
+        if (item.has("stok_ready")) card.addView(body("Stok Ready Gudang: " + firstValue(item, "0", "stok_ready") + " PCS", 13), withTop(4));
         if (!plannedUom.isEmpty()) card.addView(body("Rencana UOM: " + plannedUom, 14), withTop(5));
         if (!Double.isNaN(plannedPcs)) card.addView(body("Rencana PCS: " + formatQuantity(plannedPcs), 14), withTop(4));
 
